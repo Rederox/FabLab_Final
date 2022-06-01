@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <link rel="stylesheet" href="../css/Style_reserver.css">
+    <title>Reserver</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/reserver/appareil_status.js"></script>
+    <script src="../js/reserver/connecter.js"></script>
+    <script src="../js/reserver/mobile_keyboard.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        Bienvenue à Fablab
+    </header>
+    <div class="main">
+        <div class="Box1">
+            <center>
+                <div class="box_login">
+                    <h2><a id="demo"></a></h2>
+                    <p class="text">Veuillez mettre vos identifiants pour allumer votre appareil</p>
+                    <form method="post" id="Form1">
+                        <div class="login">
+                            <label for="login">Utilisateur &#8203 &#8203 &#8203 &#8203 &#8203 &#8203:</label>
+                            <input type="text" id="login" name="login" required>
+                        </div>
+                        <br>
+                        <div class="mdp">
+                            <label for="mdp">Mot de passe :</label>
+                            <input type="password" id="mdp" name="mdp" required>
+                        </div>
+                        <div class="error">
+                            <p id="retour_login"></p>
+                        </div>
+                        <button type=submit class="button" id="button"></button>
+                    </form>
+                </div>
+            </center>
+        </div>
+    </div>
+
+    <footer>
+        <p>©Copyright 2022 by Fablab. All rights reversed.</p>
+    </footer>
+
+</body>
+
+</html>
