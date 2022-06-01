@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(0, 0, 0); 
+    height: 98%;
+    display:flex;
+    flex-direction: column;
+    
+ }
+ header{
+    
+    font-size:calc(1.5*(1vh + 1vw));
+    flex: 0;
+    font-weight: bolder; 
+    text-align: center;
+    background-color: #6cb5ff;
+    color: #fff;
+    border-radius: 8px;
+    min-height:5%;
+ }
+ 
+ footer{
+    flex: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #6cb5ff;
+    color: #fff;
+    border-radius: 8px;
+}
+.main{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.Box1{
+    
+    background-position: 56.5%  66%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-color: #6cb5ff;
+    /* margin: 0 auto; */
+    color:white;
+    border: 5px solid #6cb5ff;
+    border-radius: 8px;
+    width: 50%;
+    overflow: hidden;
+    /* test decoration */
+    /* box-shadow: rgba(255, 255, 255, 0.4) 0px 5px, rgba(255, 255, 255, 0.3) 0px 10px,rgba(255, 255, 255, 0.2) 0px 15px, rgba(255, 255, 255, 0.1) 0px 20px, rgba(255, 255, 255, 0.05) 0px 25px; */
+    
+}
+
+.Box2{
+    
+    
+    /* margin: 0 auto; */
+    
+    /* padding-right: 1%; */
+    margin-left: 0.5%;
+    text-align: center;
+    color:white;
+    background-color: #6cb5ff;
+    border: 5px solid #6cb5ff;
+    border-radius: 8px;
+    width: 50%;
+    height: auto;
+    /* test decoration */
+}
+
+.upload_notice{
+    border:3px solid  white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.open_notice{
+    border:3px solid  white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.NFC_write{
+    border:3px solid  white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.NFC_read{
+    border:3px solid  white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.NFC_delete{
+    border:3px solid  white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media all and (max-width: 800px) {
+    footer{
+        font-size:calc(1.1*(1vh + 1vw));
+    }
+}

@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Reserver</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/NFC_read_delete.js"></script>
+    <script src="js/NFC_write.js"></script>
+    <script src="js/Notices.js"></script>
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        Bienvenue à Fablab
+    </header>
+    <div class="main">
+        <div class="Box1">
+            <center>
+                <h1>Gerer les notices</h1>
+                <div class="upload_notice">
+                    <h1>Télecharger ou Modifier le notices</h1>
+                    <form>
+                        <select name="appareil" id="appareil_upload"></select>
+                        <input type="file" name="file" id="file" class="form-control" />
+                        <input type="button" id="btn_upload" value="Upload">
+                    </form>
+                    <div id="return"></div>
+                </div>
+                <div class="open_notice">
+                    <h1>Ouvrir les notices</h1>
+                    <div id="link"></div>
+
+                </div>
+            </center>
+        </div>
+
+        <div class="Box2">
+            <center>
+                <h1>Gestion de TAG NFC</h1>
+                <div class="NFC_write">
+                    <h1>Creer un tag NFC de notices</h1>
+                    <form id="write_notices">
+                        <select name="appareil_NFC" id="appareil_NFC_notices"></select>
+                        <input type="text" name="choix" value="1" style="display: none;">
+                        <input type="button" id="btn_write_nfc" value="Ecrire">
+                    </form>
+                    <div id="return2"></div>
+                </div>
+
+                <div class="NFC_write">
+                    <h1>Creer un tag NFC de gestion de prise</h1>
+                    <form id="write_gestion">
+                        <select name="appareil_NFC" id="appareil_NFC_prises"></select>
+                        <input type="text" name="choix" value="4" style="display: none;">
+                        <input type="button" id="btn_gestion_prise" value="Ecrire">
+                    </form>
+                    <div id="return5"></div>
+                </div>
+
+                <div class="NFC_read">
+                    <h1>Lire un tag NFC </h1>
+                    <form id="read">
+                        <input type="text" id="read_val" name="choix" value="2" style="display: none;">
+                        <input type="button" id="btn_read_nfc" value="Lire">
+                    </form>
+                    <div id="return3"></div>
+                </div>
+
+                <div class="NFC_delete">
+                    <h1>Effacer un tag NFC </h1>
+                    <form id="delete">
+                        <input type="text" name="choix" id="delete_val" value="3" style="display: none;">
+                        <input type="button" id="btn_delete_nfc" value="Effacer">
+                    </form>
+                    <div id="return4"></div>
+                </div>
+            </center>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>©Copyright 2022 by Fablab. All rights reversed.</p>
+    </footer>
+
+</body>
+
+</html>
