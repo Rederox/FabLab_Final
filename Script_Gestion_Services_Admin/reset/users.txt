@@ -1,0 +1,99 @@
+; User configuration
+;
+; Creating entries in users.conf is a "shorthand" for creating individual
+; entries in each configuration file.  Using users.conf is not intended to
+; provide you with as much flexibility as using the separate configuration
+; files (e.g. sip.conf, iax.conf, etc) but is intended to accelerate the
+; simple task of adding users.  Note that creating individual items (e.g.
+; custom SIP peers, IAX friends, etc.) will allow you to override specific
+; parameters within this file.  Parameter names here are the same as they
+; appear in the other configuration files.  There is no way to change the
+; value of a parameter here for just one subsystem.
+;
+;
+;[general]
+;fullname = New User
+;userbase = 
+;hasvoicemail = yes
+;vmsecret = 
+;hassip = yes
+;hasiax = yes
+;hash323 = yes
+;hasmanager = no
+;macaddress = 
+;autoprov = yes
+;LINEKEYS = 1
+;linenumber = 1
+;cid_number = 
+;callwaiting = yes
+;threewaycalling = yes
+;callwaitingcallerid = yes
+;transfer = yes
+;canpark = yes
+;cancallforward = yes
+;callreturn = yes
+;callgroup = 1
+;pickupgroup = 1
+;nat = no
+;
+;[]
+;fullname = Joe User
+;description = Courtesy Phone In Lobby    ; Used to provide a description of the
+;                                        ; peer in console output
+;email = joe@foo.bar
+;secret = 
+;dahdichan = 
+;hasvoicemail = yes
+;vmsecret = 
+;hassip = yes
+;hasiax = no
+;hash323 = no
+;hasmanager = no
+;callwaiting = no
+;context = international
+;
+; Some administrators choose alphanumeric extensions, but still want their
+; users to be reachable by traditional numeric extensions, specified by the
+; alternateexts entry.
+;
+;alternateexts = 
+;macaddress = 
+;autoprov = yes
+;LINEKEYS = 
+;linenumber = 
+;cid_number = 
+;
+;
+;hasvoicemail = yes
+;hassip = yes
+;hasiax = yes
+;callwaiting = yes
+;threewaycalling = yes
+;callwaitingcallerid = yes
+;transfer = yes
+;canpark = yes
+;cancallforward = yes
+;callreturn = yes
+;callgroup = 1
+;pickupgroup = 1
+;nat = yes
+
+[601]
+username=601
+fullname=serveurvocal
+callerid=serveurvocal
+context=fablab
+secret=1234
+type=friend
+host=dynamic
+dtmfmode=rfc2833
+
+[602]
+username=602
+fullname=messagerie
+callerid=messagerie
+context=fablab
+secret=1234
+type=friend
+host=dynamic
+dtmfmode=rfc2833
