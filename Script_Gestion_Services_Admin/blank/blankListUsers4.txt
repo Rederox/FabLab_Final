@@ -1,2 +1,0 @@
-usr=USERNAME,pwd=PASSWORD
-

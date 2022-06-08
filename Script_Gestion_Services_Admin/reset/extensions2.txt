@@ -1,7 +1,0 @@
-;
-;
-;
-[serveurvocal]
-exten => s,1,Answer()
-exten => s,2,Set(TIMEOUT(response)=10)
-exten => s,3,WaitExten()

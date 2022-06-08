@@ -1,4 +1,0 @@
-host USER {
-hardware ethernet MAC;
-fixed-address IP;
-}

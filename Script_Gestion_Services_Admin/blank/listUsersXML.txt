@@ -1,2 +1,0 @@
-user=walid,number=6001,secret=1234,domain=fablab,proxy=192.168.3.83,mac=AABBCCDDEEFF
-user=walid,number=6001,secret=1234,domain=fablab,proxy=192.168.3.83,mac=AABBCCDDEEFF
