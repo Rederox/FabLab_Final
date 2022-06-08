@@ -1,0 +1,1 @@
+user=NAME,secret=SECRET,domain=fablab,number=NUMBER

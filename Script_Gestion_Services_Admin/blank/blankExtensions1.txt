@@ -1,0 +1,4 @@
+exten => NUMBER,1,Answer
+exten => NUMBER,2,Dial(SIP/NUMBER2,10)
+exten => NUMBER,3,Voicemail(NUMBER3@fablab)
+exten => NUMBER,4,Hangup

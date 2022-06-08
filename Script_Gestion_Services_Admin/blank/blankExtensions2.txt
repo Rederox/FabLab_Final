@@ -1,0 +1,1 @@
+exten => NUMBER4,1,Dial(SIP/NUMBER5)

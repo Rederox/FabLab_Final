@@ -1,0 +1,1 @@
+user=USERNAME,number=USERNUMBER,secret=USERPASSWORD,domain=fablab,proxy=192.168.3.83,mac=USERMAC
