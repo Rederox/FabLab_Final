@@ -20,9 +20,9 @@ services du serveur via un IHM. Il pourra aussi avoir accès aux données d’ac
 consommation électrique des machines.
 
 
-####  Tout les raspberry et le serveur doit etre dans le même reseaux ####
+Tout les raspberry et le serveur doit etre dans le même reseaux 
 
-# Les serveur UDP sont codé en C++ 
-  À lancer sur les raspberry avec les composants relier 
+Les serveur UDP sont codé en C++ 
+ À lancer sur les raspberry avec les composants relier 
   
-# Les client UDP sont faite en php il sont directement integrer avec une interface web
+Les client UDP sont faite en php il sont directement integrer avec une interface web
