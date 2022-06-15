@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>FabLab</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/feather/feather.css">
+  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../pages/tag_nfc/css/style.css">
+  <link rel="stylesheet" href="select/css/awselect.css">
+
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+
+  <meta http-Equiv="Cache-Control" Content="no-cache" />
+  <meta http-Equiv="Pragma" Content="no-cache" />
+  <meta http-Equiv="Expires" Content="0" />
+
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="../../"><img src="../../images/logo.svg" class="mr-2"
+            alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="../../"><img src="../../images/logo-mini.svg" alt="logo" /></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-profile dropdown">
+            <a class="btn btn-inverse-danger btn-fw" href="../login/deconnecter.php">
+              <i class="ti-power-off text-primary"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme">
+            <div class="img-ss rounded-circle bg-light border mr-3"></div>Light
+          </div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme">
+            <div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark
+          </div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- partial -->
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="../../">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="../../pages/adherent/index.php">
+              <i class="icon-head menu-icon"></i>
+              <span class="menu-title">Gestion des adherents </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/Notices/">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Gestion des Notices </span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../../pages/tag_nfc/">
+              <i class="icon-tag menu-icon"></i>
+              <span class="menu-title">Gestion des tag NFC </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/stats/">
+              <i class="icon-pie-graph menu-icon"></i>
+              <span class="menu-title">Stats d'utilisation </span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- partial -->
+
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-12 grid-margin">
+              <div class="card">
+
+                <div class="card-body">
+
+                  <div class="flex">
+                    <div class="a1 box btn-inverse-primary">Créer un tag NFC de notices</div>
+                    <div class="a2 box btn-inverse-primary">Créer un tag NFC d'appareil</div>
+                    <div class="a3 box btn-inverse-primary">Créer un tag NFC manuellement</div>
+                    <div class="a4 box btn-inverse-primary">Lire un tag NFC</div>
+                    <div class="a5 box btn-inverse-primary">Effacer un tag NFC</div>
+                    <!-- <div class="a4 box">Créer un tag NFC manuellement</div> -->
+
+
+
+                  </div>
+                </div>
+
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="popup-wrap w1">
+          <div class="popup-box b1">
+            <h2>Créer un tag NFC de notices</h2>
+            <a class="close-btn popup-close" href="#">x</a>
+            <div class="box2">
+              <a style="color: red;">N'oubliez pas de placer votre Tag NFC dans le lecteur</a>
+              <br><br><br><br>
+              <a id="text">Veuillez choisir l'appareil</a>
+              <br>
+              <form id="write_notices">
+                <select name="appareil_NFC" id="appareil_NFC_notices" class="select"
+                  data-placeholder="Choisir l'appareil"></select>
+                <br><br>
+                <input type="text" name="choix" value="1" style="display: none;">
+                <br><br>
+                <input type="button" id="btn_write_nfc" class="btn btn-inverse-primary btn-fw" value="Ecrire">
+                <br><br><br><br>
+                <div id="return2" class="result"></div>
+              </form>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="popup-wrap w2">
+          <div class="popup-box b2">
+            <h2>Créer un tag NFC d'appareil</h2>
+            <a class="close-btn popup-close" href="#">x</a>
+            <div class="box2">
+              <a style="color: red;">N'oubliez pas de placer votre Tag NFC dans le lecteur</a>
+              <br><br><br><br>
+              <a id="text">Veuillez choisir l'appareil</a>
+              <br>
+              <form id="write_gestion">
+                <select name="appareil_NFC" id="appareil_NFC_prises" class="select"
+                  data-placeholder="Choisir l'appareil"></select>
+                <br><br>
+                <input type="text" name="choix" value="4" style="display: none;">
+                <br><br>
+                <input type="button" id="btn_gestion_prise" class="btn btn-inverse-primary btn-fw" value="Ecrire">
+                <br><br><br><br>
+                <div id="return3" class="result"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup-wrap w3">
+          <div class="popup-box b3">
+            <h2>Créer un tag NFC manuellement</h2>
+            <a class="close-btn popup-close" href="#">x</a>
+
+            <div class="box2">
+              <a style="color: red;">N'oubliez pas de placer votre Tag NFC dans le lecteur</a>
+              <br><br><br><br>
+              <a id="text">Veuillez écrire un url</a>
+              <br>
+              <form id="write_url">
+                <div class="form-group">
+                  <span>http://</span>
+                  <input type="text" name="appareil_NFC" id="appareil_NFC_notices" class="write form-field  ">
+                </div>
+                <br><br>
+                <input type="text" name="choix" value="6" style="display: none;">
+                <br><br>
+                <input type="button" id="btn_write_url" class="btn btn-inverse-primary btn-fw" value="Ecrire">
+                <br><br><br><br>
+                <div id="return4" class="result"></div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="popup-wrap w4">
+          <div class="popup-box b4">
+            <h2>Lire un tag NFC</h2>
+            <a class="close-btn popup-close" href="#">x</a>
+            <a style="color: red;">N'oubliez pas de placer votre Tag NFC dans le lecteur</a>
+            <br><br><br><br>
+            <form id="read">
+              <br><br>
+              <input type="text" id="read_val" name="choix" value="2" style="display: none;">
+              <br><br>
+              <input type="button" id="btn_read_nfc" value="Lire" class="btn btn-inverse-primary btn-fw">
+              <br><br><br><br>
+              <div id="return5" class="result"></div>
+            </form>
+          </div>
+        </div>
+
+        <div class="popup-wrap w5">
+          <div class="popup-box b5">
+            <h2>Effacer un tag NFC</h2>
+            <a class="close-btn popup-close" href="#">x</a>
+            <a style="color: red;">N'oubliez pas de placer votre Tag NFC dans le lecteur</a>
+            <br><br><br><br>
+            <form id="delete">
+              <br><br>
+              <input type="text" name="choix" id="delete_val" value="3" style="display: none;">
+              <br><br>
+              <input type="button" id="btn_delete_nfc" value="Effacer" class="btn btn-inverse-primary btn-fw">
+              <br><br><br><br>
+              <div id="return6" class="result"></div>
+            </form>
+          </div>
+        </div>
+
+
+
+
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Fablab © 2022.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Merci BTS SNIR <i
+                class="ti-heart text-danger ml-1"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+
+
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <!-- endinject -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/NFC_read_delete.js"></script>
+  <script src="../tag_nfc/js/NFC_write.js"></script>
+  <script type="text/javascript" src="select/js/awselect.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

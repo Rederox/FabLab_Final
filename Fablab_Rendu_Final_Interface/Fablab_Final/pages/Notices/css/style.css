@@ -1,0 +1,230 @@
+.download{
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.drop{
+  margin: 0.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 25vh;
+  border: 4px dashed grey;
+}
+.inside{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(87, 87, 87);
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 2vw;
+}
+#file{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 40vw;
+  height: 25vh;
+  outline: none;
+  opacity: 0%;
+}
+.upload_notice{
+    border:3px solid  white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.open_notice{
+    border:3px solid  white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.NFC_write{
+    border:3px solid  white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.NFC_read{
+    border:3px solid  white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.NFC_delete{
+    border:3px solid  white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.view {
+  
+  font-size: 25px;
+  color: #4B49AC;
+ 
+}
+
+
+th,tr{
+  text-align: center;
+}
+
+.result{
+  width: 100%;
+  font-size: 1.5vw;
+  color: #4B49AC;
+  overflow-x: visible;
+  position: relative;
+  text-align: center;
+}
+
+.loader{
+
+  color: #4B49AC;
+}
+/*########################## test view popup #######################################*/
+
+
+.button:hover {
+  background: #12FCF8;
+  color: #333;
+}
+.overlay {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.329);
+  transition: opacity .4s;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  
+}
+.popup{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  margin: 6rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 5px;
+  width: 60%;
+  transition: all 0.4s ease-in-out;
+}
+.popup .cross {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+  color: #333;
+}
+.popup .cross:hover {
+  color: #ff0000c2;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+/*########################## Loading wheel #######################################*/
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 1.9em;
+  height: 1.9em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #ffffff;
+  font-size: 7px;
+  margin: 20px auto;
+  position: relative;
+  text-indent: -9999em; 
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+
+
+
+@media all and (max-width: 800px) {
+    footer{
+        font-size:calc(1.1*(1vh + 1vw));
+    }
+}

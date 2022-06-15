@@ -1,0 +1,26 @@
+.Button{
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    font-family: arial, sans-serif;
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration: none;
+}
+.hide{
+    display:none;
+}
+.noDisplay{
+    visibility: hidden;
+}
+.affichageTableau{
+    color: #4B49AC;
+    font-style: bold;
+    font-size: 20px;
+}
+.violet{
+    color: #4B49AC;
+    font-size: 17px;
+}
+
