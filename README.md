@@ -26,3 +26,13 @@ Les serveur UDP sont codé en C++
  À lancer sur les raspberry avec les composants relier 
   
 Les client UDP sont faite en php il sont directement integrer avec une interface web
+
+# Interface dans l'acceuil
+![image](https://user-images.githubusercontent.com/80551691/176402584-9572f503-3fef-4e92-afe6-962ffe9c4e3f.png)
+
+# Interface Gestion des adhérents 
+![image](https://user-images.githubusercontent.com/80551691/176402911-9b52ebd9-cd24-4c84-adf2-9c20f516f1b0.png)
+
+#Interface Gestion des notices 
+![image](https://user-images.githubusercontent.com/80551691/176403045-c3a4949c-0c7c-47a6-9b05-54faeb0cf68f.png)
+![image](https://user-images.githubusercontent.com/80551691/176403115-9139dfe6-1961-45a3-af69-c908f4cac632.png)
