@@ -33,6 +33,17 @@ Les client UDP sont faite en php il sont directement integrer avec une interface
 # Interface Gestion des adhérents 
 ![image](https://user-images.githubusercontent.com/80551691/176402911-9b52ebd9-cd24-4c84-adf2-9c20f516f1b0.png)
 
-#Interface Gestion des notices 
+# Interface Gestion des notices 
 ![image](https://user-images.githubusercontent.com/80551691/176403045-c3a4949c-0c7c-47a6-9b05-54faeb0cf68f.png)
 ![image](https://user-images.githubusercontent.com/80551691/176403115-9139dfe6-1961-45a3-af69-c908f4cac632.png)
+
+# Interface Gestion des tag NFC
+![image](https://user-images.githubusercontent.com/80551691/176403488-6daf6063-a31f-4698-9b46-cfb0ccd3349f.png)
+![image](https://user-images.githubusercontent.com/80551691/176403650-ea68faa4-f675-4e4d-850a-a8e323e6ec49.png)
+
+# Interface Stats d'utilisation
+![image](https://user-images.githubusercontent.com/80551691/176403773-925044d1-627d-4071-a758-c8b760ac1c69.png)
+![image](https://user-images.githubusercontent.com/80551691/176403805-a53f18be-f838-48f1-a451-a4d70fdc4a31.png)
+
+
+
